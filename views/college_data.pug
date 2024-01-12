@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Colleges List
+    style
+      include ../static/colleges_data_stle.css
+  body
+    h1 Colleges List
+    ol
+      each college in college_data
+        li
+          h2= college.College_Name
+          p State: #{college.State}
+          p Stream: #{college.Stream}
+          p UG Fee: #{college.UG_fee}
+          p PG Fee: #{college.PG_fee}
+          p Rating: #{college.Rating}
+          p Academic: #{college.Academic}
+          p Accommodation: #{college.Accommodation}
+          p Faculty: #{college.Faculty}
+          p Infrastructure: #{college.Infrastructure}
+          p Placement: #{college.Placement}
+          p Social Life: #{college.Social_Life}
+    a(href="/") Back to Home

@@ -1,0 +1,73 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title college community
+  style 
+    include ../static/contactus.css
+  link(rel='stylesheet' href='style.css')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Catamaran:wght@100;400&family=Dancing+Script:wght@500;600&family=Exo+2:ital,wght@0,100;0,400;1,200&family=Indie+Flower&family=Open+Sans:wght@300&family=Pacifico&family=Roboto+Mono:wght@100&family=Roboto:wght@100&family=Work+Sans:ital,wght@0,300;0,500;1,100&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+section.sub-header
+  nav
+    a(href='collegehome.html')
+      img(src='https://imgs.search.brave.com/0_KebD6PG6c5G0Pm8Mla2d-0R6qGt4MEH-J3mu3GHBA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9keW5h/bWljLmJyYW5kY3Jv/d2QuY29tL2Fzc2V0/L2xvZ28vNGYxYjc5/MTEtYzI5OC00M2Ix/LTkzOTgtMWY2ODVj/YTY2OGIyL2xvZ28t/c2VhcmNoLWdyaWQt/MXg_bG9nb1RlbXBs/YXRlVmVyc2lvbj0z/JnY9NjM4Mjc3NTk1/OTU5MjAwMDAw' alt='')
+    #navlinks.nav-links
+      i.fa.fa-times
+      ul
+        li
+          a(href='/') HOME
+        li
+          a(href='aboutus') ABOUT
+        li
+          a(href='login') LOGIN
+        li
+          a(href='signup') SIGN UP
+        li
+          a(href='contactus') CONTACT
+    i.fa.fa-bars
+  h1 CONTACT US
+// LOCATION
+section.location
+  iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28026.45740676687!2d77.06383184051374!3d28.59056027683724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1b3f9902dce7%3A0xdf51d27e693abbea!2sPalam%2C%20Delhi!5e0!3m2!1sen!2sin!4v1698694237726!5m2!1sen!2sin' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade')
+section.contact-us
+  .row
+    .contact-col
+      div
+        i.fa.fa-home
+        span
+          h5 AIRPORT ROAD,ABC building
+          p sector 7 dwarka ,new Delhi,IN
+      div
+        i.fa.fa-phone
+        span
+          h5 +1 0198555678
+          p Monday to saturday, 10AM TO 6PM 
+      div
+        i.fa.fa-envelope-o
+        span
+          h5 info@smarhgmail.com
+          p Email us your query 
+    .contact-col
+      form(action='')
+        input(type='text' placeholder='Enter your name' required='')
+        input(type='text' placeholder='Enter email address' required='')
+        input(type='text' placeholder='Enter your subject' required='')
+        textarea(rows='8' placeholder='Message' required='')
+        button.hero-btn.red-btn(type='submit') Send Message
+// footer
+section#clients
+  h1.clients-heading CONTACT US
+  .image
+    a(href='https://whatsapp.com' target='_blank')
+      img.app-image(src='https://cdn-icons-png.flaticon.com/128/1384/1384023.png' alt='')
+    a(href='https://facebook.com' target='_blank')
+      img.app-image(src='https://cdn-icons-png.flaticon.com/128/20/20837.png' alt='')
+    a(href='https://twitter.com' target='_blank')
+      img.app-image(src='https://cdn-icons-png.flaticon.com/128/5968/5968958.png' alt='')
+    a(href='https://reddit.com' target='_blank')
+      img.app-image(src='https://cdn-icons-png.flaticon.com/128/1946/1946543.png' alt='')
+    a(href='https://instagram.com' target='_blank')
+      img.app-image(src='https://cdn-icons-png.flaticon.com/128/717/717392.png' alt='')

@@ -1,0 +1,87 @@
+* {
+    margin: 0px;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+
+}
+
+.page::before {
+    background: url("https://images.unsplash.com/photo-1432821596592-e2c18b78144f?auto=format&fit=crop&q=80&w=1740&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.89;
+    z-index: -1;
+
+}
+
+.form {
+    color: white;
+    margin: auto;
+    /* border: 2px solid black; */
+    padding-top: 96px;
+}
+
+.form a{
+    color: #1b262e;
+}
+
+.form h1 {
+    font-size: 48px;
+}
+
+#inform {
+    font-size: 38px;
+    margin-top: 16px;
+}
+
+.welcome {
+    margin: auto;
+    color: white;
+    font-family: 'Baloo Bhai 2', serif;
+    /* border: 2px solid black; */
+}
+
+.welcome h1 {
+    font-size: 116px;
+}
+
+.welcome p {
+    font-size: 23px;
+}
+
+.input {
+    padding: 13px 66px;
+    margin: 10px;
+    border-radius: 19px;
+    opacity: 1.7;
+    text-align: center;
+}
+
+.label {
+    font: 2px;
+}
+
+.form-submit-button {
+    background: #d57a5ede;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    text-shadow: none;
+    padding: 13px 22px;
+}
+
+.form-submit-button:hover {
+    background: #016ABC;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow: none;
+}

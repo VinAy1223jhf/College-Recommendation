@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Search Form</title>
+    <link rel="stylesheet" href="filter_style.css">
+</head>
+<body>
+
+    <section class="header">
+        <nav>
+            <a href="/">
+                <img src="https://imgs.search.brave.com/0_KebD6PG6c5G0Pm8Mla2d-0R6qGt4MEH-J3mu3GHBA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9keW5h/bWljLmJyYW5kY3Jv/d2QuY29tL2Fzc2V0/L2xvZ28vNGYxYjc5/MTEtYzI5OC00M2Ix/LTkzOTgtMWY2ODVj/YTY2OGIyL2xvZ28t/c2VhcmNoLWdyaWQt/MXg_bG9nb1RlbXBs/YXRlVmVyc2lvbj0z/JnY9NjM4Mjc3NTk1/OTU5MjAwMDAw" alt="">
+            </a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times"></i>
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="login">LOGIN</a></li>
+                    <li><a href="">SIGN UP</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"></i>
+        </nav>
+        <div class="text-box">
+            <h1>College Search Form</h1>
+            <p>"Unlock Your Future: Navigate College with Confidence"</p>
+            
+        </div>
+    </section>
+    <div class="container">
+        <form action="/submit/filter" method="post">
+            <div class="form-group">
+                <label for="stream">Stream:</label>
+                <input type="text" name="stream" id="stream" placeholder="Engineering" required>
+            </div>
+            <div class="form-group">
+                <label for="academic">Academic:</label>
+                <input type="number" name="academic_min" id="academic_min" min="0" step="0.5" placeholder="Min" required>
+                <input type="number" name="academic_max" id="academic_max" min="0" step="0.5" placeholder="Max" required>
+            </div>
+            <div class="form-group">
+                <label for="faculty">Faculty:</label>
+                <input type="number" name="faculty_min" id="faculty_min" min="0" step="0.5" placeholder="Min" required>
+                <input type="number" name="faculty_max" id="faculty_max" min="0" step="0.5" placeholder="Max" required>
+            </div>
+            <div class="form-group">
+                <label for="infrastructure">Infrastructure :</label>
+                <input type="number" name="infrastructure_min" id="infrastructure_min" min="0" step="0.5" placeholder="Min" required>
+                <input type="number" name="infrastructure_max" id="infrastructure_max" min="0" step="0.5" placeholder="Max" required>
+            </div>
+            <div class="form-group">
+                <label for="placement">Placement:</label>
+                <input type="number" name="placement_min" id="placement_min" min="0" step="0.5" placeholder="Min" required>
+                <input type="number" name="placement_max" id="placement_max" min="0" step="0.5" placeholder="Max" required>
+            </div>
+            <div class="form-group">
+                <label for="social_life">Social Life :</label>
+                <input type="number" name="social_life_min" id="social_life_min" min="0" step="0.5" placeholder="Min" required>
+                <input type="number" name="social_life_max" id="social_life_max" min="0" step="0.5" placeholder="Max" required>
+            </div>
+            <div class="form-group">
+                <button class="form-submit-button" "submit">Search</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

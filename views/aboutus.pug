@@ -1,0 +1,56 @@
+doctype html
+html(lang="en")
+
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title college community
+    link(rel="stylesheet", href="style.css")
+    link(rel="preconnect", href="https://fonts.googleapis.com")
+    link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin="")
+    link(href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Catamaran:wght@100;400&family=Dancing+Script:wght@500;600&family=Exo+2:ital,wght@0,100;0,400;1,200&family=Indie+Flower&family=Open+Sans:wght@300&family=Pacifico&family=Roboto+Mono:wght@100&family=Roboto:wght@100&family=Work+Sans:ital,wght@0,300;0,500;1,100&display=swap", rel="stylesheet")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+    style 
+        include ../static/aboutus.css
+  body
+    section.sub-header
+      nav
+        a(href="collegehome.html")
+          img(src="https://imgs.search.bzrave.com/0_KebD6PG6c5G0Pm8Mla2d-0R6qGt4MEH-J3mu3GHBA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9keW5h/bWljLmJyYW5kY3Jv/d2QuY29tL2Fzc2V0/L2xvZ28vNGYxYjc5/MTEtYzI5OC00M2Ix/LTkzOTgtMWY2ODVj/YTY2OGIyL2xvZ28t/c2VhcmNoLWdyaWQt/MXg_bG9nb1RlbXBs/YXRlVmVyc2lvbj0z/JnY9NjM4Mjc3NTk1/OTU5MjAwMDAw", alt="")
+        div.nav-links#navlinks
+          
+          ul
+            li
+              a(href="/") HOME
+            li
+              a(href="aboutus") ABOUT
+            li
+              a(href="login") LOGIN
+            li
+              a(href="signup") SIGN UP
+            li
+              a(href="contactus") CONTACT
+       
+
+    section.about-us
+      .row
+        .about-col
+          h1 We are the world's largest college recommendation website
+          p The fact that College Community offers all these valuable resources and reviews for free is a huge benefit for budget-conscious students and their families.
+            centralizing a wealth of college information in one place, your website streamlines the decision-making process, saving students and their families valuable time and effort that might have been spent searching for this information elsewhere.
+            information up to date ensures that visitors can rely on College Community for the most current data regarding colleges and universities.
+            In summary, College Community is a valuable, user-friendly, and transparent platform that supports students in their quest to find the perfect college. It simplifies the complex college selection process, builds a sense of community, and empowers students with the information they need to make informed decisions.
+          a(href="filter", class="hero-btn red-btn") EXPLORE NOW
+
+        .about-col
+          img(src="https://images.unsplash.com/photo-1532649538693-f3a2ec1bf8bd?auto=format&fit=crop&q=80&w=1740&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+
+    section.footer
+      h4 About us
+      p a website that helps students make important decisions about their education, positive comments like these can build trust and credibility
+        | encouraging more users to benefit from your platform.
+      .icons
+        i.fa.fa-facebook
+        i.fa.fa-twitter
+        i.fa.fa-instagram
+        i.fa.fa-linkedin

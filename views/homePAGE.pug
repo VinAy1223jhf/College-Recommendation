@@ -1,0 +1,121 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title college community
+    link(rel='stylesheet', href='style.css')
+    link(rel='preconnect', href='https://fonts.googleapis.com')
+    link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Catamaran:wght@100;400&family=Dancing+Script:wght@500;600&family=Exo+2:ital,wght@0,100;0,400;1,200&family=Indie+Flower&family=Open+Sans:wght@300&family=Pacifico&family=Roboto+Mono:wght@100&family=Roboto:wght@100&family=Work+Sans:ital,wght@0,300;0,500;1,100&display=swap', rel='stylesheet')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display">
+
+    style
+      include ../homepage.css
+
+  body
+    section.header
+      nav
+        a(href="/")
+          img(src="https://imgs.search.brave.com/0_KebD6PG6c5G0Pm8Mla2d-0R6qGt4MEH-J3mu3GHBA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9keW5h/bWljLmJyYW5kY3Jv/d2QuY29tL2Fzc2V0/L2xvZ28vNGYxYjc5/MTEtYzI5OC00M2Ix/LTkzOTgtMWY2ODVj/YTY2OGIyL2xvZ28t/c2VhcmNoLWdyaWQt/MXg_bG9nb1RlbXBs/YXRlVmVyc2lvbj0z/JnY9NjM4Mjc3NTk1/OTU5MjAwMDAw", alt="Logo")
+        div.nav-links#navlinks
+          i.fa.fa-times
+          ul
+            li
+              a(href="/") HOME
+            li
+              a(href="aboutus") ABOUT
+            li
+              a(href="login") LOGIN
+            li
+              a(href="signup") SIGN UP
+            li
+              a(href="contactus") CONTACT
+        i.fa.fa-bars
+      div.text-box
+        h1 COLLEGE COMMUNITY
+        marquee(class ="marquee") 
+          | "Where knowledge meets unity, and aspirations find their voice. Join the College Community, where
+          | students come together to inspire, learn, and build a brighter future."
+        a.hero-btn(href="filter") GET STARTED
+
+    section.course
+      h1 Facilities we offer
+      p we have lots of facilities
+      div.row
+        div.course-col
+          h3 College Ratings
+          p This section provides an overview of the college's key attributes, including its overall ratings, faculty quality, infrastructure facilities, and placement statistics. These factors are essential in evaluating the quality and performance of the institution. The overall ratings give you an overall sense of the college's reputation, while details about the faculty, infrastructure, and placement can help you make a more informed decision about your educational choices
+        div.course-col  
+          h3 College Reviews
+          p This section features college reviews, offering insights and opinions from students, both current and former. These reviews provide valuable perspectives on academics, accommodation, faculty interactions, infrastructure quality, and the overall social environment, enhancing your understanding of the student experience and aiding your educational decisions.
+        div.course-col
+          h3 Find your own
+          p This section helps you discover your ideal college by offering a comprehensive search feature. You can tailor your search based on various criteria to find a college that aligns with your preferences and academic goals.
+
+    section.campus
+      h1 TOP RATED COLLEGES
+      p we have among the trusted ratings all over India
+      div.row
+        div.campus-col
+          a(href="https://www.iitb.ac.in/") 
+            img(src="https://images.unsplash.com/photo-1642175014539-23b986621dd4?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aWl0fGVufDB8fDB8fHww", alt="Campus Image")
+            div.layer
+              h3 IIT Bombay
+        div.campus-col
+          a(href="https://www.aiims.edu/index.php?lang=en") 
+            img(src="https://imgs.search.brave.com/nxMlXJ7adMuhv2YS_-Zi4PtazM6jg7brSv1KWAkU8yU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDExNDQw/MDkwLmpwZw", alt="Campus Image")
+            div.layer
+              h3 AIIMS Delhi
+        div.campus-col
+          a(href="https://www.bits-pilani.ac.in/") 
+            img(src="https://imgs.search.brave.com/AEM47fW27GtPU4f60EyxddONXfZK7p_hqpP-7EgjdtI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8z/LzM5L0JJVFNfUGls/YW5pXy1fSHlkZXJh/YmFkX2NhbXB1cy5q/cGc", alt="Campus Image")
+            div.layer
+              h3 BITS Pilani
+
+    section.testimonials
+      h1 What students say
+      p
+        | Helps students make important decisions about their education, positive comments like these can build trust
+        | and credibility, encouraging more users to benefit from your platform.
+      div.row
+        div.testimonial-col
+          img(src="https://media.istockphoto.com/id/603281834/photo/success-gave-me-this-smile.webp?b=1&s=170667a&w=0&k=20&c=xco4TWSuOFPyMU5umFcOPS62Dqx-f-CNgOeL3VDMcRE=", alt="Profile Image")
+          div
+            p
+              | I can't express how much College Community has helped me in my college search. The honest reviews
+              | and thoughtful guidance have been a game-changer for me. This website is a must-visit for
+              | anyone considering college. The comprehensive reviews and user-friendly interface make it a top
+              | choice for students and parents alike.
+            h3 Bhomika Singh
+        div.testimonial-col
+          img(src="https://media.istockphoto.com/id/1410538853/photo/young-man-in-the-public-park.webp?b=1&s=170667a&w=0&k=20&c=pGdjFVdK-_BhTa6PMy5VNcXdbxVNngzg-OPzMfJKrG8=", alt="Profile Image")
+          div
+            p
+              | I can't express how much College Community has helped me in my college search. The honest reviews
+              | and thoughtful guidance have been a game-changer for me. This website is a must-visit for
+              | anyone considering college. The comprehensive reviews and user-friendly interface make it a top
+              | choice for students and parents alike.
+            h3 Avni Shahu
+
+    section.cta
+        h1
+            | Sign up for our various college recommendations
+            br
+            | and get trusted ratings direct from the students
+        a.hero-btn(href="#") CONTACT US
+
+    section#clients
+      h1.clients-heading CONTACT US
+      .image
+        a(href='https://whatsapp.com' target='_blank')
+          img.app-image(src='https://cdn-icons-png.flaticon.com/128/1384/1384023.png' alt='')
+        a(href='https://facebook.com' target='_blank')
+          img.app-image(src='https://cdn-icons-png.flaticon.com/128/20/20837.png' alt='')
+        a(href='https://twitter.com' target='_blank')
+          img.app-image(src='https://cdn-icons-png.flaticon.com/128/5968/5968958.png' alt='')
+        a(href='https://reddit.com' target='_blank')
+          img.app-image(src='https://cdn-icons-png.flaticon.com/128/1946/1946543.png' alt='')
+        a(href='https://instagram.com' target='_blank')
+          img.app-image(src='https://cdn-icons-png.flaticon.com/128/717/717392.png' alt='')

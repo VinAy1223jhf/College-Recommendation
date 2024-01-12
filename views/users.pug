@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Users List
+    style
+        include ../static/users_style.css
+  body
+    h1 Users List
+    ol
+      each user in users
+        li
+          strong Username:
+          | #{user.Yname}
+          br
+          strong Age:
+          | #{user.age}
+          br
+          strong Gender:
+          | #{user.gender}
+          br  
+          strong Address:
+          | #{user.address}
+          br
+          strong More Info:
+          | #{user.more_info}
+          br
+    a(href="/") Back to Home
